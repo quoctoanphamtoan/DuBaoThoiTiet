@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="2">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:text="Ngày tháng"
+            android:id="@+id/tvNgay"
+            android:textSize="25dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="center"
+            android:text="Trạng thái"
+            android:id="@+id/tvTrangThai"
+            android:textSize="30dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/imageTrangThai"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/tvMax"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:text="Max"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            />
+        <TextView
+            android:id="@+id/tvMin"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:text="Min"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
